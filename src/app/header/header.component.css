@@ -1,0 +1,28 @@
+.navbar {
+    background-color: #FFFFFF;
+    margin-bottom: 0px;
+    padding-top: 0px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    min-height: 100px;
+    border-radius: 0px;
+}
+
+.navbar-nav .nav-link {
+    padding-top: 51px;
+    padding-bottom: 0px;
+    padding-right: 0px;
+    padding-left: 0px;
+}
+
+.navbar-brand {
+    padding: 0px 15px 15px 30px;
+}
+
+.logout {
+    font-size: 24px;
+    color: #00802F;
+}
+
+.logout:hover {
+    color: rgba(0, 128, 47, 0.9);
+}

@@ -1,0 +1,17 @@
+@import '~@angular/material/prebuilt-themes/indigo-pink.css';
+/* You can add global styles to this file, and also import other style files */
+/* 1. Button Styles */
+
+.btn-primary {
+    background-color: #00802F;
+    border-color: #00802F;
+}
+
+.btn-primary:hover {
+    background-color: rgba(0, 128, 47, 0.9);
+    border-color: rgba(0, 128, 47, 0.9);
+}
+
+body {
+    background-color: #eee;
+}

@@ -1,0 +1,35 @@
+﻿<div class="col-lg-12">
+
+    <h3>Hi {{currentUser.firstName}} {{currentUser.lastName}}!</h3>
+    <p><a [routerLink]="['/login']">Logout <i class="fa fa-fw fa-sign-out"></i></a></p>
+
+  <!-- Content Output -->
+  <!-- Ngx Autoscroll Implementation -->
+ <div ngx-auto-scroll lock-y-offset="10" 
+  observe-attributes class="card">
+    <div class="card-body">
+      <div class="card-text alert alert-secondary" 
+          *ngFor="let hero of heroes">
+          <!-- Username Integration -->
+           <span class="username">{{currentUser.username}}</span>
+            <span class="timestamp">{{hero.date}}</span>
+            <br>{{hero.message}}
+            
+          </div>
+      </div>
+  </div>
+    
+  <!-- Message Input -->
+ <div class="input-group">
+    <input #newHero
+      (keyup.enter)="addHero(newHero.value); newHero.value='';"
+      type="text" class="form-control" 
+      placeholder="Your message ...">
+    <span class="input-group-btn">
+      <button (click)="addHero(newHero.value); newHero.value='';" 
+        class="btn btn-primary" type="button">Send <i class="fa fa-fw fa-paper-plane"></i></button>
+    </span>
+  </div>
+  <!-- /input-group -->
+    
+</div>
